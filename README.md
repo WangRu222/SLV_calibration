@@ -1,5 +1,5 @@
 # The background
-Mathematically, the calibration problem of the volatility model is an inverse problem of determining the model parameters. Through calibration, the derivative product price calculated by the model is consistent with the market price of the product. Since the constant volatility assumption in the Black-Scholes model [5] cannot reflect the volatility smile and term structure of volatility observed in the market, in the past few decades, researchers have been trying to calibrate the market with richer volatility models, including stochastic local volatility models and models with jumps.
+Mathematically, the calibration problem of the volatility model is an inverse problem of determining the model parameters. Through calibration, the derivative product price calculated by the model is consistent with the market price of the product. Since the constant volatility assumption in the Black-Scholes model cannot reflect the volatility smile and term structure of volatility observed in the market,  we have tried  stochastic local volatility models, and use adi method and finite difference to dynamic updating of option prices as it progresses through time match real market data.
 
 # The components
 
@@ -21,10 +21,10 @@ The matrix A is formed and then used to derive the intermediate value B for the 
 
  is a implementation for filling in NaN values in an array using various numerical methods
 
-- OptionPrice2_put
+- OptionPrice2
 
-is part of a numerical method to price European put options using finite difference techniques. 
-The function aims to calculate the price of European put options based on the Black-Scholes model or a similar framework, utilizing a grid-based approach for numerical approximation.
+is part of a numerical method to price European call options using finite difference techniques. 
+The function aims to calculate the price of European call options based on the Black-Scholes model, utilizing a grid-based approach for numerical approximation.
 
 - initial_by_bisection
 
