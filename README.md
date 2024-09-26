@@ -3,6 +3,10 @@ Mathematically, the calibration problem of the volatility model is an inverse pr
 
 # The components
 
+- yutian_initial
+
+calculates the initial joint distribution of two variables, 𝑆 and 𝑧, using specified parameters
+
 - finite_difference_mat_b2
 
 The function aims to: Create finite difference matrices for the asset prices (S) and a secondary variable (z), which could represent factors like volatility. 
